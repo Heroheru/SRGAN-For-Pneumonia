@@ -92,7 +92,7 @@ pip install -r requirements.txt
 
 ## How to Run (Testing Only)
 ### 1.first, input your testing image in **test_data** folder , then 
-### 2. ```bash python test.py ```
+### 2. ```python test.py ```
 ### 3. The output images are located in **result** folder
 
 ---
@@ -114,21 +114,14 @@ This repository focuses on:
 
 ---
 
-## Sample Output
 
-### Low Resolution → High Resolution
-
-![Sample Result](assets/sample_result.png)
-
----
 
 ## Technologies Used
 
 * Python
-* TensorFlow / PyTorch (adjust sesuai kamu pakai)
+* PyTorch 
 * SRGAN architecture
-* OpenCV
-* NumPy
+
 
 ---
 
