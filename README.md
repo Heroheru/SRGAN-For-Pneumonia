@@ -5,7 +5,7 @@ PATIENTS
 
 ![SRGAN Banner](assets/banner.png)
 
-## 📌 Overview
+##  Overview
 
 This project was developed to complete my undergraduate final thesis. It applies a **Super-Resolution Generative Adversarial Network (SRGAN)** to enhance chest X-ray images for pneumonia patients by reconstructing high-resolution images from low-resolution inputs.
 
@@ -13,9 +13,10 @@ The model uses a modified loss function tailored to X-ray characteristics (ChexN
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 * Labeled Optical Coherence Tomography (OCT) and Chest X-ray Dataset
+* https://data.mendeley.com/datasets/rscbjbr9sj/2
 * Total: **4,273 pneumonia chest X-ray images**
 
 ---
@@ -31,14 +32,14 @@ The model uses a modified loss function tailored to X-ray characteristics (ChexN
 
 ---
 
-## ⚖️ Comparison
+##  Comparison
 
 Compared with:
 
 * SRResNet
 * Pre-trained SRGAN (DIV2K)
 
-👉 The proposed model achieves the best performance in both **visual quality and quantitative metrics**.
+The proposed model achieves the best performance in both **visual quality and quantitative metrics**.
 
 ---
 
@@ -53,7 +54,6 @@ Compared with:
 ├── test_data
 ├── Test.py
 ├── dataset.py
-├── install.ipynb
 ├── ops.py
 ├── requirements.txt
 ├── srgan_model.py
@@ -81,12 +81,12 @@ python test.py
 The output images are located in **result** folder
 ---
 
-## ⚠️ Important Notes
+## Important Notes
 
 * This repository is **ONLY for testing/inference**
 * No training pipeline is included here
 
-### 🧠 Model Information
+### Model Information
 
 * `model/SRGAN_gene_069.pt`
   → This file contains the **pre-trained SRGAN generator model**, trained previously by the author (myself).
