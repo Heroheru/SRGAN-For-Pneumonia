@@ -9,7 +9,7 @@ PATIENTS
 
 This project was developed to complete my undergraduate final thesis. It applies a **Super-Resolution Generative Adversarial Network (SRGAN)** to enhance chest X-ray images for pneumonia patients by reconstructing high-resolution images from low-resolution inputs.
 
-The model uses a modified loss function tailored to X-ray characteristics to improve structural clarity and diagnostic quality.
+The model uses a modified loss function tailored to X-ray characteristics (ChexNet Feature Extractor Layers)  to improve structural clarity and diagnostic quality.
 
 ---
 
@@ -42,22 +42,28 @@ Compared with:
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 .
 ├── test.py
-├── model_generator_069.py
+├── model/
+|   ├── SRGAN_gene_069.pt
+├── result
+├── test_data
+├── Test.py
+├── dataset.py
+├── install.ipynb
+├── ops.py
 ├── requirements.txt
-├── assets/
-│   ├── banner.png
-│   ├── sample_input.png
-│   ├── sample_output.png
+├── srgan_model.py
+├── assets
+
 ```
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### 1. Install dependencies
 
@@ -67,13 +73,12 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ How to Run (Testing Only)
-first, imput your testing image in 
-
+## How to Run (Testing Only)
+first, imput your testing image in **test_data** folder , then 
 ```bash
 python test.py
 ```
-
+The output images are located in **result** folder
 ---
 
 ## ⚠️ Important Notes
@@ -83,12 +88,12 @@ python test.py
 
 ### 🧠 Model Information
 
-* `model_generator_069.py`
+* `model/SRGAN_gene_069.pt`
   → This file contains the **pre-trained SRGAN generator model**, trained previously by the author (myself).
 
 ---
 
-## 🔬 Purpose
+## Purpose
 
 This repository focuses on:
 
@@ -98,7 +103,7 @@ This repository focuses on:
 
 ---
 
-## 🖼️ Sample Output
+## Sample Output
 
 ### Low Resolution → High Resolution
 
@@ -106,7 +111,7 @@ This repository focuses on:
 
 ---
 
-## 📌 Technologies Used
+## Technologies Used
 
 * Python
 * TensorFlow / PyTorch (adjust sesuai kamu pakai)
@@ -115,14 +120,6 @@ This repository focuses on:
 * NumPy
 
 ---
-
-## 👨‍⚕️ Impact
-
-This work aims to support medical imaging systems by improving the visibility of lung structures in chest X-rays, potentially assisting radiologists in pneumonia diagnosis.
-
----
-
-## 📜 License
 
 For academic and research purposes only.
 
