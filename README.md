@@ -3,7 +3,7 @@
 ENHANCING CHEST X-RAY IMAGE RESOLUTION IN PNEUMONIA 
 PATIENTS
 
-![SRGAN Banner](assets/banner.png)
+![SRGAN Banner](assets/comparing.png)
 
 ##  Overview
 
