@@ -92,18 +92,10 @@ pip install -r requirements.txt
 
 ## How to Run (Testing Only)
 ### 1.first, input your testing image in **test_data** folder , then 
-### 2. 
-```bash
-python test.py
-```
+### 2. ```bash python test.py ```
 ### 3. The output images are located in **result** folder
 
 ---
-
-## Important Notes
-
-* This repository is **ONLY for testing/inference**
-* No training pipeline is included here
 
 ### Model Information
 
