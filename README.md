@@ -1,5 +1,128 @@
-# Implementation Of Super-Resolution GAN (SRGAN) For Enhancing 
-  Chest X-Ray Image Resolution In Pneumonia Patients
 
-This project was developed  to complete my my undergraduate final 
-thesis. Applying the Super-Resolution Generative Adversarial Network (SRGAN) to enhance chest X-ray images, this project is used to reconstruct high-resolution images from low-resolution inputs, with a modified loss function tailored to X-ray characteristics. The model is trained on the Labeled Optical Coherence Tomography (OCT) and Chest X-ray dataset containing 4,273 pneumonia cases. Experimental results show strong performance with SSIM of 0.8598, PSNR of 32.77 dB, and MOS of 4.0, producing sharper and more anatomically consistent images. Compared to SRResNet and a pre-trained SRGAN (DIV2K), the proposed model achieves the best visual and quantitative performance for lung X-ray enhancement.
+# IMPLEMENTATION OF SUPER-RESOLUTION GAN (SRGAN) FOR 
+ENHANCING CHEST X-RAY IMAGE RESOLUTION IN PNEUMONIA 
+PATIENTS
+
+![SRGAN Banner](assets/banner.png)
+
+## 📌 Overview
+
+This project was developed to complete my undergraduate final thesis. It applies a **Super-Resolution Generative Adversarial Network (SRGAN)** to enhance chest X-ray images for pneumonia patients by reconstructing high-resolution images from low-resolution inputs.
+
+The model uses a modified loss function tailored to X-ray characteristics to improve structural clarity and diagnostic quality.
+
+---
+
+## 📊 Dataset
+
+* Labeled Optical Coherence Tomography (OCT) and Chest X-ray Dataset
+* Total: **4,273 pneumonia chest X-ray images**
+
+---
+
+## 🧪 Results
+
+| Metric | Value    |
+| ------ | -------- |
+| SSIM   | 0.8598   |
+| PSNR   | 32.77 dB |
+| MOS    | 4.0      |
+
+
+---
+
+## ⚖️ Comparison
+
+Compared with:
+
+* SRResNet
+* Pre-trained SRGAN (DIV2K)
+
+👉 The proposed model achieves the best performance in both **visual quality and quantitative metrics**.
+
+---
+
+## 🏗️ Project Structure
+
+```
+.
+├── test.py
+├── model_generator_069.py
+├── requirements.txt
+├── assets/
+│   ├── banner.png
+│   ├── sample_input.png
+│   ├── sample_output.png
+```
+
+---
+
+## 🚀 Installation
+
+### 1. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ How to Run (Testing Only)
+first, imput your testing image in 
+
+```bash
+python test.py
+```
+
+---
+
+## ⚠️ Important Notes
+
+* This repository is **ONLY for testing/inference**
+* No training pipeline is included here
+
+### 🧠 Model Information
+
+* `model_generator_069.py`
+  → This file contains the **pre-trained SRGAN generator model**, trained previously by the author (myself).
+
+---
+
+## 🔬 Purpose
+
+This repository focuses on:
+
+* Image super-resolution inference
+* Evaluation of trained SRGAN model
+* Medical image enhancement for pneumonia diagnosis
+
+---
+
+## 🖼️ Sample Output
+
+### Low Resolution → High Resolution
+
+![Sample Result](assets/sample_result.png)
+
+---
+
+## 📌 Technologies Used
+
+* Python
+* TensorFlow / PyTorch (adjust sesuai kamu pakai)
+* SRGAN architecture
+* OpenCV
+* NumPy
+
+---
+
+## 👨‍⚕️ Impact
+
+This work aims to support medical imaging systems by improving the visibility of lung structures in chest X-rays, potentially assisting radiologists in pneumonia diagnosis.
+
+---
+
+## 📜 License
+
+For academic and research purposes only.
+
