@@ -11,6 +11,13 @@ This project was developed to complete my undergraduate final thesis. It applies
 
 The model uses a modified loss function tailored to X-ray characteristics (ChexNet Feature Extractor Layers)  to improve structural clarity and diagnostic quality.
 
+Important Notes
+This repository is dedicated to inference and model evaluation only.
+The training process was conducted separately as part of the research and is not included in this repository due to scope and reproducibility considerations.
+
+Model Information
+model_generator_069.py contains the SRGAN generator architecture with pre-trained weights, developed and trained in the context of this study and prior experimental work by the author.
+
 ---
 
 ##  Dataset
