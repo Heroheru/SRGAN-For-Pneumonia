@@ -91,11 +91,13 @@ pip install -r requirements.txt
 ---
 
 ## How to Run (Testing Only)
-first, imput your testing image in **test_data** folder , then 
+### 1.first, input your testing image in **test_data** folder , then 
+### 2. 
 ```bash
 python test.py
 ```
-The output images are located in **result** folder
+### 3. The output images are located in **result** folder
+
 ---
 
 ## Important Notes
