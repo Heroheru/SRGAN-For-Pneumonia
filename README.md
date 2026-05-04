@@ -27,12 +27,15 @@ model_generator_069.py contains the SRGAN generator architecture with pre-traine
 ---
 
 ## Architecture
-![SRGAN architecture](assets/architecture.png)
+![SRGAN architecture](assets/arsitektur.png)
+
 ---
 
 ## Modification
 ![SRGAN modif](assets/modification.png)
+
 the X-Ray Pneumonia Classification Pre-Trained Model CheXNEt is used as modified loss method. This project used some feature extractor layers such as dense block 2 and 3 to extact the information between SR images and Ground Truth images.
+
 ---
 
 ## Results
