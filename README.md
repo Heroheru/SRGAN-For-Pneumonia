@@ -14,7 +14,7 @@ This repository is dedicated to inference and model evaluation only.
 The training process was conducted separately as part of the research and is not included in this repository due to scope and reproducibility considerations.
 
 Model Information
-model_generator_069.py contains the SRGAN generator architecture with pre-trained weights, developed and trained in the context of this study and prior experimental work by the author.
+SRGAN_gene_069.pt contains the SRGAN generator architecture with pre-trained weights, developed and trained in the context of this study and prior experimental work by the author.
 
 ---
 
